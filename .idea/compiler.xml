@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mavenTesting-test-unit" />
         <module name="mavenTesting-domain" />
-        <module name="mavenTesting-service-impl" />
         <module name="mavenTesting" />
+        <module name="mavenTesting-service-impl" />
       </profile>
     </annotationProcessing>
   </component>
