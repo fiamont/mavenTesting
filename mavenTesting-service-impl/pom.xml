@@ -18,6 +18,10 @@
             <groupId>se.sofiamontgomery</groupId>
             <artifactId>mavenTesting-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>se.sofiamontgomery</groupId>
+            <artifactId>mavenTesting-service</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

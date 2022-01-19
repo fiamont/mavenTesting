@@ -13,4 +13,11 @@
     <artifactId>mavenTesting-service</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.sofiamontgomery</groupId>
+            <artifactId>mavenTesting-domain</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
