@@ -26,6 +26,8 @@
 
         <!-- version -->
         <junit.version>4.13.1</junit.version>
+        <spring-beans.version>5.3.13</spring-beans.version>
+        <spring-core.version>5.3.14</spring-core.version>
 
     </properties>
 
@@ -55,6 +57,22 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>5.3.13</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>5.3.14</version>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>
