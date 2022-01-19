@@ -1,3 +1,5 @@
+package mavenTesting.domain;
+
 public abstract class Animal {
     protected int age;
     protected int weight;

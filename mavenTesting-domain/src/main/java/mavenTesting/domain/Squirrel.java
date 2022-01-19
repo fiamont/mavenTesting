@@ -1,3 +1,5 @@
+package mavenTesting.domain;
+
 public class Squirrel extends Animal {
     private int numOfConesInNest;
 

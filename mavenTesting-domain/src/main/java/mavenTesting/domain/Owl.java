@@ -1,3 +1,5 @@
+package mavenTesting.domain;
+
 import java.util.Random;
 
 public class Owl extends Animal{
