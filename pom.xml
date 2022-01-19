@@ -35,6 +35,7 @@
         <module>mavenTesting-domain</module>
         <module>mavenTesting-service-impl</module>
         <module>mavenTesting-test</module>
+        <module>mavenTesting-service</module>
     </modules>
 
     <dependencyManagement>
