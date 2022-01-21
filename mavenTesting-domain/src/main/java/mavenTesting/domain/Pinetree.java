@@ -42,7 +42,6 @@ public class Pinetree {
 
     //other methods/classes
     public boolean fall(int pests, int age){
-
         return (pests>10&&age>400);
     }
 

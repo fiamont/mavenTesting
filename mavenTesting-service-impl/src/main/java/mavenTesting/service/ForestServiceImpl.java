@@ -4,8 +4,9 @@ import mavenTesting.domain.Owl;
 import mavenTesting.domain.Pinetree;
 import mavenTesting.domain.Squirrel;
 
-public class ForrestServiceImpl implements ForrestService{
+public class ForestServiceImpl implements ForestService {
 
+    @Override
     public Owl createOwl(int wingSpan, boolean hungry, int age, int weight, String name){
         return new Owl(name);
     }

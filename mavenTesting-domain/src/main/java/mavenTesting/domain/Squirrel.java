@@ -37,7 +37,7 @@ public class Squirrel extends Animal {
 
     @Override
     public String toString() {
-        return "The squirrel " + name + " weighs " + weight + " g, is " + age + " years old, have " + numOfConesInNest + " cones in its nest, and the hungerfeelings " + hungry + "!";
+        return "The squirrel " + name + " weighs " + weight + " g, is " + age + " years old, have " + numOfConesInNest + " cones in its nest, and the hungerfeelings is " + hungry + "!";
     }
 
 }

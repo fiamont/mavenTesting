@@ -11,7 +11,12 @@ import java.util.List;
 public class TestApp {
 
     @Test
-    public void testApp(){
+    public void testAppen(){
+        App.app();
+    }
+
+    @Test
+    public void testCreateSquirrel(){
 
         List<Squirrel> squirrelList = App.createSquirrels();
         Assert.assertEquals(3,squirrelList.size());

@@ -1,37 +1,54 @@
 package mavenTesting.domain;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-
+    app();
     }
 
+    //main method
     public static void app() {
         Pinetree pinetree = createPinetree();
-
         Scanner s = new Scanner(System.in);
+        System.out.println("Do you want to see the forest? (yes = 1 or no = 0)");
 
-        System.out.println("Do you want to see the forest? (yes or no)");
-        String answer = s.nextLine();
-
-        if (answer.equalsIgnoreCase("yes")) {
-            forest(pinetree);
-            String answer2 = s.nextLine();
-
-            if (answer2.equalsIgnoreCase("yes")) {
-                somethingIsHappening(pinetree);
-
-            } else if (answer2.equalsIgnoreCase("no")) {
-                System.out.println("Ok, bye!");
+            try {
+                while(true){
+                    int answer = s.nextInt();
+                    if (answer==1) {
+                        forest(pinetree);
+                        int answer2 = s.nextInt();
+                        if (answer2==1) {
+                            somethingIsHappening(pinetree);
+                            break;
+                        } else if (answer2==0) {
+                            System.out.println("Ok, bye!");
+                            break;
+                        }else {
+                            System.out.println("type 1 for yes or 0 for no!");
+                            answer2=s.nextInt();
+                        }
+                    } else if (answer==0) {
+                        System.out.println("Ok, bye!");
+                        break;
+                    } else {
+                        System.out.println("type 1 for yes or 0 for no!");
+                        answer=s.nextInt();
+                    }
+                }
+            }catch (InputMismatchException e){
+                System.out.println("type 1 for yes or 0 for no!");
+                s.nextLine();
+                int answer=s.nextInt();
             }
 
-        } else if (answer.equalsIgnoreCase("no")) {
-            System.out.println("Ok, bye!");
-        }
     }
+
+    //creating objects-methods
     public static ArrayList<Squirrel> createSquirrels (){
         ArrayList<Squirrel> squirrelList = new ArrayList<Squirrel>();
         Squirrel tintin = new Squirrel(401, 9, true, 4, "Tintin");
@@ -50,13 +67,15 @@ public class App {
         return new Pinetree(38, 103, 0, createOwl(), createSquirrels());
     }
 
+
+    //"Story-methods"
     public static void forest(Pinetree pinetree){
         System.out.println(pinetree);
-        System.out.println("\n" + pinetree.getSquirrels().get(0).getName());
-        System.out.println(pinetree.getSquirrels().get(1).getName());
-        System.out.println(pinetree.getSquirrels().get(2).getName());
-        System.out.println("\n" + pinetree.getOwl().getName());
-        System.out.println("\nSomething is happening in the forest, do you wanna see? (yes or no)");
+        System.out.println("\n" + pinetree.getSquirrels().get(0));
+        System.out.println(pinetree.getSquirrels().get(1));
+        System.out.println(pinetree.getSquirrels().get(2));
+        System.out.println("\n" + pinetree.getOwl());
+        System.out.println("\nSomething is happening in the forest, do you wanna see? (yes=1 or no=0)");
     }
 
     public static void somethingIsHappening(Pinetree pinetree){
