@@ -20,20 +20,10 @@ public class Squirrel extends Animal {
     }
 
     //getters & setters
-    public int getWeight() {return weight;}
-    public void setWeight(int weight) {this.weight = weight;}
 
     public int getNumOfConesInNest() {return numOfConesInNest;}
     public void setNumOfConesInNest(int numOfConesInNest) {this.numOfConesInNest = numOfConesInNest;}
 
-    public boolean isHungry() {return hungry;}
-    public void setHungry(boolean hungry) {this.hungry = hungry;}
-
-    public int getAge() {return age;}
-    public void setAge(int age) {this.age = age;}
-
-    public String getName() {return name;}
-    public void setName(String name) {this.name = name;}
 
     //other methods
     @Override

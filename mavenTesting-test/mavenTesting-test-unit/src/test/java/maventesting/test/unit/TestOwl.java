@@ -1,4 +1,4 @@
-package mavenTest.test.unit;
+package maventesting.test.unit;
 
 import mavenTesting.domain.Owl;
 import org.junit.Test;
