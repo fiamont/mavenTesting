@@ -39,6 +39,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- my projects -->
             <dependency>
                 <groupId>se.sofiamontgomery</groupId>
                 <artifactId>mavenTesting-domain</artifactId>
