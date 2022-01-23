@@ -10,10 +10,10 @@ import java.util.List;
 
 public class TestApp {
 
-    @Test
+    /*@Test
     public void testAppen(){
         App.app();
-    }
+    }*/
 
     @Test
     public void testCreateSquirrel(){

@@ -1,1 +1,3 @@
-mavenTest\test\unit\TestOwl.class
+maventesting\test\unit\TestApp.class
+maventesting\test\unit\TestOwl.class
+maventesting\test\unit\TestService.class
