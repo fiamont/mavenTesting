@@ -26,6 +26,7 @@
 
         <!-- version -->
         <junit.version>4.13.1</junit.version>
+        <mysql.version>8.0.28</mysql.version>
         <spring.version>5.3.13</spring.version>
 
     </properties>
@@ -35,6 +36,8 @@
         <module>mavenTesting-service-impl</module>
         <module>mavenTesting-test</module>
         <module>mavenTesting-service</module>
+        <module>mavenTesting-dao-impl</module>
+        <module>mavenTesting-dao</module>
     </modules>
 
     <dependencyManagement>
@@ -45,14 +48,28 @@
                 <artifactId>mavenTesting-domain</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+
+            <dependency>
+                <groupId>se.sofiamontgomery</groupId>
+                <artifactId>mavenTesting-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>se.sofiamontgomery</groupId>
                 <artifactId>mavenTesting-service-impl</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+
             <dependency>
                 <groupId>se.sofiamontgomery</groupId>
-                <artifactId>mavenTesting-service</artifactId>
+                <artifactId>mavenTesting-dao</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>se.sofiamontgomery</groupId>
+                <artifactId>mavenTesting-dao-impl</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
@@ -62,6 +79,13 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
 
             <!-- Spring -->

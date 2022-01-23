@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mavenTesting-test-unit" />
         <module name="mavenTesting-domain" />
+        <module name="mavenTesting-dao-impl" />
         <module name="mavenTesting-service" />
         <module name="mavenTesting-service-impl" />
+        <module name="mavenTesting-dao" />
       </profile>
     </annotationProcessing>
   </component>

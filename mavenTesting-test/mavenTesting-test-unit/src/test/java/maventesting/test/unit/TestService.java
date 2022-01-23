@@ -2,6 +2,7 @@ package maventesting.test.unit;
 
 import mavenTesting.domain.Owl;
 import mavenTesting.service.ForestService;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -21,6 +22,7 @@ public class TestService {
     @Test
     public void testForestServiceDependencyInjection(){
         Owl owl = forestService.createOwl(91, true, 7, 456, "Hedvig");
+        Assert.assertNotNull(owl);
     }
 
 
